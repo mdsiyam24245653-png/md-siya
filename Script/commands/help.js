@@ -5,7 +5,7 @@ module.exports.config = {
 	name: "help",
 	version: "3.1.0",
 	hasPermssion: 0,
-	credits: "🔰𝐑𝐀𝐇𝐀𝐓 𝐈𝐒𝐋𝐀𝐌🔰",
+	credits: "🔰𝐒𝐈𝐘𝐀𝐌 𝐈𝐒𝐋𝐀𝐌🔰",
 	description: "Tree style help menu with fixed categories",
 	commandCategory: "system",
 	usages: "[command name]",
@@ -25,7 +25,7 @@ module.exports.languages = {
 ┃ 📄 Usage: %2
 ┃ 📜 Description: %3
 ┃ 🔑 Permission: %4
-┃ 👨‍💻 Credit:Rahat Islam
+┃ 👨‍💻 Credit:Siyam Islam
 ┃ 📂 Category: %6
 ┃ ⏳ Cooldown: %7s
 ┣━━━━━━━━━━━━━━━━┫
@@ -52,7 +52,7 @@ function getVideoAttachment() {
 }
 
 // =========================
-// 🔰🔰𝐑𝐀𝐇𝐀𝐓 𝐈𝐒𝐋𝐀𝐌🔰
+// 🔰🔰𝐒𝐈𝐘𝐀𝐌 𝐈𝐒𝐋𝐀𝐌🔰
 // =========================
 module.exports.run = async function ({ api, event, args, getText }) {
 	const { commands } = global.client;
@@ -73,7 +73,7 @@ module.exports.run = async function ({ api, event, args, getText }) {
 			cmd.config.commandCategory || "OTHER",
 			cmd.config.cooldowns || 0,
 			prefix,
-			global.config.BOTNAME || "Rahat_Bot"
+			global.config.BOTNAME || "Siyam_Bot"
 		);
 
 		try {
@@ -132,10 +132,10 @@ module.exports.run = async function ({ api, event, args, getText }) {
 	Object.keys(groups).forEach(key => groups[key].sort());
 
 	// =========================
-	// 🔰𝐑𝐀𝐇𝐀𝐓 𝐈𝐒𝐋𝐀𝐌🔰
+	// 🔰𝐒𝐈𝐘𝐀𝐌 𝐈𝐒𝐋𝐀𝐌🔰
 	// =========================
 	let body = `╭━━━━━━━━━━━━━━━━╮
-┃ 🔰${global.config.BOTNAME || "𝐑𝐀𝐇𝐀𝐓 𝐁𝐎𝐓"}
+┃ 🔰${global.config.BOTNAME || "𝐒𝐈𝐘𝐀𝐌 𝐁𝐎𝐓"}
 ┃ 📂𝐂𝐎𝐌𝐌𝐀𝐍𝐃 𝐒𝐓𝐎𝐑𝐄
 ┣━━━━━━━━━━━━━━━━┫`;
 
@@ -151,8 +151,9 @@ module.exports.run = async function ({ api, event, args, getText }) {
 	body += `┣━━━━━━━━━━━━━━━━┫
 ┃➪𝐏𝐫𝐞𝐟𝐢𝐱: ${prefix}
 ┃➪𝗧𝗼𝘁𝗮𝗹 𝗖𝗺𝗱: ${commands.size}
-┃➪𝙊𝙬𝙣𝙚𝙧: 𝙍𝙖𝙝𝙖𝙩 𝙄𝙨𝙡𝙖𝙢
+┃➪𝙊𝙬𝙣𝙚𝙧: 𝙎𝙞𝙮𝙖𝙢 𝙄𝙨𝙡𝙖𝙢
 ╰━━━━━━━━━━━━━━━━╯`;
+
 	try {
 		const attachments = getVideoAttachment();
 
@@ -170,7 +171,6 @@ module.exports.run = async function ({ api, event, args, getText }) {
 
 	} catch (error) {
 		console.error("[HELP] হেল্প মেনু পাঠাতে সমস্যা:", error);
-		// Video ছাড়া শুধু টেক্সট পাঠান
 		api.sendMessage(body, threadID, messageID);
 	}
 };
