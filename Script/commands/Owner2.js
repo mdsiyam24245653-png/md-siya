@@ -28,7 +28,7 @@ module.exports.run = async function ({ api, event }) {
  body:
 `🌟 𝗢𝗪𝗡𝗘𝗥 𝗜𝗡𝗙𝗢 🌟
 
-👑 𝗡𝗮𝗺𝗲: Rahat Islam😘
+👑 𝗡𝗮𝗺𝗲: 𝐒𝐢𝐲𝐚𝐦 𝐇𝐚𝐬𝐚𝐧 😘
 😻 𝗔𝗱𝗱𝗿𝗲𝘀𝘀: মেয়েদের মনে🙈
 💼 𝗣𝗿𝗼𝗳𝗲𝘀𝘀𝗶𝗼𝗻: মেয়েদের মন জয় করা😍
 
@@ -39,7 +39,7 @@ module.exports.run = async function ({ api, event }) {
 📱 𝗪𝗵𝗮𝘁𝘀𝗔𝗽𝗽: দিলে আমার আম্মু বকা দিবা 🤣
 👻 𝗦𝗻𝗮𝗽𝗰𝗵𝗮𝘁: তোদের মতো কালা নাকি ফিল্টার লাগামু🤭
 
-🤖 𝗕𝗢𝗧 𝗕𝗬: 🔰 𝗥𝗮𝗵𝗮𝘁_𝗜𝘀𝗹𝗮𝗺 🔰
+🤖 𝗕𝗢𝗧 𝗕𝗬: ⏳ 𝐒𝐢𝐲𝐚𝐦 𝐇𝐚𝐬𝐚𝐧 ⏳
 `,
  attachment: fs.createReadStream(path)
  }, event.threadID, () => fs.unlinkSync(path));
