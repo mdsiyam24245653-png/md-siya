@@ -5,7 +5,7 @@ module.exports.config = {
 	name: "0admin",
 	version: "1.0.5",
 	hasPermssion: 3,
-	credits: "🔰𝐑𝐀𝐇𝐀𝐓 𝐈𝐒𝐋𝐀𝐌🔰",
+	credits: "⏳𝕊𝕚𝕪𝕒𝕞 -ℍ𝕒𝕤𝕒𝕟⏳",
 	description: "Admin Config",
 	commandCategory: "Admin",
 	usages: "Admin [command] [@mention/reply/UID/link/name]",
@@ -126,7 +126,7 @@ module.exports.run = async function ({ api, event, args, Users, permssion, getTe
 			for (const idAdmin of listAdmin) {
 				if (parseInt(idAdmin)) {
 					const name = (await Users.getData(idAdmin)).name
-					msg.push(`🔰 ${name}\n»𝗟𝗶𝗻𝗸 𝗙𝗕: https://www.facebook.com/${idAdmin} 💌`);
+					msg.push(`⏳ ${name}\n»𝗟𝗶𝗻𝗸 𝗙𝗕: https://www.facebook.com/${idAdmin} 💌`);
 				}
 			}
 			listNDH = NDH || config.NDH || [];
@@ -134,7 +134,7 @@ module.exports.run = async function ({ api, event, args, Users, permssion, getTe
 			for (const idNDH of listNDH) {
 				if (parseInt(idNDH)) {
 					const name1 = (await Users.getData(idNDH)).name
-					msg1.push(`🔰 ${name1}\n»𝗟𝗶𝗻𝗸 𝗙𝗕: https://www.facebook.com/${idNDH} 🤖`);
+					msg1.push(`⏳ ${name1}\n»𝗟𝗶𝗻𝗸 𝗙𝗕: https://www.facebook.com/${idNDH} 🤖`);
 				}
 			}
 
@@ -148,7 +148,7 @@ module.exports.run = async function ({ api, event, args, Users, permssion, getTe
 			const { targetID, targetName } = await getTargetUser(api, event, content, Users);
 			
 			if (!targetID) {
-				return api.sendMessage("❌রাহাদ বসকে ডাক দে🫩\nকীভাবে কমান্ড ব্যবহার করতে হয় শিখায় দিবো🥴", threadID, messageID);
+				return api.sendMessage("❌ সিয়াম বসকে ডাক দে🫩\nকীভাবে কমান্ড ব্যবহার করতে হয় শিখায় দিবো🥴", threadID, messageID);
 			}
 			
 			// Check if already admin
@@ -161,7 +161,7 @@ module.exports.run = async function ({ api, event, args, Users, permssion, getTe
 			config.ADMINBOT.push(targetID);
 			
 			writeFileSync(configPath, JSON.stringify(config, null, 4), 'utf8');
-			return api.sendMessage(getText("addedNewAdmin", 1, `🔰𝗔𝗱𝗺𝗶𝗻 - ${targetName}`), threadID, messageID);
+			return api.sendMessage(getText("addedNewAdmin", 1, `⏳𝗔𝗱𝗺𝗶𝗻 - ${targetName}`), threadID, messageID);
 		}
 		
 		case "addndh": {
