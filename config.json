@@ -5,7 +5,7 @@
     "autoCreateDB": true,
     "notiGroup": true,
     "NOTIFICATION": true,
-    "allowInbox": false,
+    "allowInbox": true,
     "autoClean": true,
     "commandDisabled": [
         "sim.js"
@@ -16,15 +16,15 @@
     "EMAIL": "",
     "PASSWORD": "",
     "OTPKEY": "",
-    "BOTNAME": "🔰𝗥𝗮𝗵𝗮𝘁_𝗕𝗼𝘁🔰",
+    "BOTNAME": "⏳𝑺𝒊𝒚𝒂𝒎 𝑪𝒉𝒂𝒕 𝑩𝒐𝒕⏳",
     "PREFIX": "/",
     "ADMINBOT": [
-        "61582311465479",
-        "61584194023750",
-        "61582708907708"
+        "61584641872032",
+        "61568411310748",
+        ""
     ],
     "NDH": [
-        "61582708907708"
+        "61568411310748"
     ],
     "DATABASE": {
         "sqlite": {
