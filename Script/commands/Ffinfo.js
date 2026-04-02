@@ -17,7 +17,7 @@ module.exports.run = async function ({ api, event, args }) {
     const uid = args[0];
     if (!uid) {
       return api.sendMessage(
-        "⚠️ Free Fire UID দাও\n📌 Example: ffinfo 3160644273",
+        "⚠️ Free Fire UID দাও\n📌 Example: ffinfo 61568411310748",
         event.threadID,
         event.messageID
       );
